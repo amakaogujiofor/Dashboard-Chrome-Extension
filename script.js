@@ -1,6 +1,7 @@
 // Declarations
 const time = document.getElementById("time-slot");
 const author = document.getElementById("author");
+const cryptoData = document.getElementById("crypto-top");
 
 // // Displays
 // const mainTime = new Date();
@@ -29,4 +30,9 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
     }
     return res.json();
   })
-  .then((data) => console.log(data));
+  .then((data) => {
+    console.log(data);
+    cryptoData.innerHTML = `
+      <img src="${data.image.small}" </>
+      <span>${data.name}</span>`;
+  });
