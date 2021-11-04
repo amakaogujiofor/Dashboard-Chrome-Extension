@@ -40,6 +40,10 @@ div#crypto {
   font-size: 1.3rem;
 }
 
+div#crypto > p {
+  margin: 2px;
+}
+
 div#crypto-top {
   display: flex;
   align-items: center;
@@ -47,4 +51,13 @@ div#crypto-top {
 
 div#crypto-top > span {
   margin-left: 10px;
+}
+
+#quote {
+  text-align: center;
+  padding: 0 30px;
+}
+#time {
+  font-size: 3rem;
+  color: tomato;
 }
