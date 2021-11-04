@@ -61,3 +61,26 @@ div#crypto-top > span {
   font-size: 3rem;
   color: tomato;
 }
+div#weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-self: flex-start;
+}
+
+div#weather > img {
+  width: 70px;
+}
+
+p.weather-city {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  margin-top: -15px;
+}
+
+p.weather-temp {
+  margin: 0;
+  font-size: 1.7rem;
+}
